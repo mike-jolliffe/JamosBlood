@@ -1,0 +1,8 @@
+@font-face {
+    font-family: BaddEst;
+    src: url('../fonts/BaddEst/Rough/BADDEST ROUGH.ttf');
+}
+
+h1 {
+    font-family: BaddEst, monospace;
+}
