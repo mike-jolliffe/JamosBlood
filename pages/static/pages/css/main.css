@@ -3,11 +3,23 @@
     src: url('../fonts/BaddEst/Rough/BaddestRough.otf');
 }
 
-#bannerTop {
+.bannerBig {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #cccccc;
+    height: 100vh;
+}
+
+.bannerShrink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+    position: absolute;
+    height: 20vh;
+    width: 100vw;
+    font-size: 5em;
 }
 
 p {

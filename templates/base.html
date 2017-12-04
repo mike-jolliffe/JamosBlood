@@ -13,10 +13,10 @@
 <nav>
     <div><a href="{% url 'home'%}">Home</a></div>
     <div><a href="{% url 'shows' %}">Shows</a></div>
-    <div><a>Music</a></div>
-    <div><a>Contact</a></div>
-    <div><a>Bio</a></div>
-    <div><a>Photos</a></div>
+    <div><a href="{% url 'music' %}">Music</a></div>
+    <div><a href="{% url 'contact' %}">Contact</a></div>
+    <div><a href="{% url 'bio' %}">Bio</a></div>
+    <div><a href="{% url 'photos' %}">Photos</a></div>
 </nav>
 
 {% block content %}
