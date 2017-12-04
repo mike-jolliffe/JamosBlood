@@ -20,11 +20,12 @@
     height: 20vh;
     width: 100vw;
     font-size: 50%;
-    transition-duration: 0.6s;
+    transition-duration: 0.7s;
 }
 
 p {
     font-family: BaddEst, monospace;
+    font-size: 2em;
 }
 
 h1 {
