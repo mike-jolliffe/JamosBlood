@@ -19,3 +19,12 @@ h1 {
     font-size: 10em;
     text-align: center;
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: BaddEst, monospace;
+    font-size: 2em;
+}
