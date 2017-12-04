@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    text-align: center;
 }
 
 .bannerBig {
@@ -30,6 +31,31 @@ body {
     transition-duration: 0.7s;
 }
 
+#mailinglistcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mailinglistcontainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 5px;
+    font-size: 1.3em;
+}
+
 p {
     font-family: BaddEst, monospace;
     font-size: 2em;
@@ -45,6 +71,13 @@ h1 {
     text-align: center;
     opacity: 1;
 }
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
 
 nav {
     display: flex;
