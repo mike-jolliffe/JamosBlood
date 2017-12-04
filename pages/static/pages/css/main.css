@@ -1,8 +1,16 @@
 @font-face {
     font-family: BaddEst;
-    src: url('../fonts/BaddEst/Rough/BADDEST ROUGH.ttf');
+    src: url('../fonts/BaddEst/Rough/BaddestRough.otf');
+}
+
+#bannerTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-family: BaddEst, monospace;
+    font-size: 10em;
+    text-align: center;
 }
