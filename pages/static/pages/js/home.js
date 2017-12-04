@@ -5,10 +5,12 @@ function getScrollDistance(callback) {
 }
 
 function hideBanner(distance) {
-    if (distance > 200) {
+    if (distance > 150) {
         document.getElementById('bannerTop').className = 'bannerShrink';
-    } else if (distance < 200) {
+        document.getElementById('navMenu').classList.add('fixed');
+    } else if (distance < 150) {
         document.getElementById('bannerTop').className = 'bannerBig';
+        document.getElementById('navMenu').classList.remove('fixed');
     }
 }
 
