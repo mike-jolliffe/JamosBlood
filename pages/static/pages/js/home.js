@@ -8,10 +8,10 @@ function getScrollPercent(callback) {
 }
 
 function hideBanner(percentage) {
-    if (percentage > 15) {
+    if (percentage > 20) {
         document.getElementById('bannerTop').className = 'bannerShrink';
-        document.getElementById('bannerTitle').style.fontSize = '2em';
-
+    } else if (percentage < 20) {
+        document.getElementById('bannerTop').className = 'bannerBig';
     }
 }
 
