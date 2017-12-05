@@ -17,3 +17,7 @@ function hideBanner(distance) {
 document.addEventListener("scroll", function () {
     getScrollDistance(hideBanner);
 });
+
+// document.getElementById('submit').onsubmit = function () {
+//     return document.getElementById('mailingListContainer').prepend("<p>Thanks for signing up</p>")
+// };
