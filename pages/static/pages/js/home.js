@@ -29,7 +29,11 @@ $(document).on('submit', '#emailField', function (e) {
             csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
         },
         success: function() {
-            console.log("Email submitted")
+            $('#emailConfirm').css('display', 'inline');
+            $('#email').val('');
+            setTimeout(function () {
+                $('#emailConfirm').css('display', 'none')
+            }, 3000)
         }
     })
 });
