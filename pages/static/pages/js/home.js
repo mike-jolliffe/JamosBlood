@@ -18,6 +18,18 @@ document.addEventListener("scroll", function () {
     getScrollDistance(hideBanner);
 });
 
-// document.getElementById('submit').onsubmit = function () {
-//     return document.getElementById('mailingListContainer').prepend("<p>Thanks for signing up</p>")
-// };
+$(document).on('submit', '#emailField', function (e) {
+    e.preventDefault();
+
+    $.ajax({
+        type: 'POST',
+        url: "email/",
+        data: {
+            email: $('#email').val(),
+            csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+        },
+        success: function() {
+            console.log("Email submitted")
+        }
+    })
+});

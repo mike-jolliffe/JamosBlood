@@ -17,7 +17,7 @@
         <div>
             <h3>Mailing List</h3>
         </div>
-        <form action="/email/" id="emailField" method="post">
+        <form id="emailField" method="post">
             {% csrf_token %}
             <input id="email" type="text" name="email" placeholder="Your Email">
             <input id="submit" class="btn" type="submit" value="Sign Up">

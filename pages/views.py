@@ -1,4 +1,4 @@
-from django.shortcuts import HttpResponseRedirect, render
+from django.shortcuts import HttpResponse, render
 from pages.models import EmailList
 
 
@@ -17,7 +17,7 @@ def get_email(request):
             obj = EmailList(email=email)
         obj.save()
 
-        return HttpResponseRedirect('/')
+        return HttpResponse('')
 
 def shows(request):
     return render(request, "shows.html")
