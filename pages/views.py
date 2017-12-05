@@ -1,5 +1,7 @@
 from django.shortcuts import HttpResponse, render
-from pages.models import EmailList
+from django.views import generic
+from pages.models import EmailList, Show
+
 
 
 def home(request):
