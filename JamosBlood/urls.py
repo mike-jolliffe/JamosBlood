@@ -23,7 +23,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', page_views.home, name='home'),
-    url(r'shows/', page_views.shows, name='shows'),
+    url(r'shows/', page_views.ShowsList.as_view(), name='shows'),
+    url(r'shows/(?P<pk>[0-9]+)/$', page_views.ShowDetails.as_view(), name='show_detail'),
     url(r'music/', page_views.music, name='music'),
     url(r'contact/', page_views.contact, name='contact'),
     url(r'bio/', page_views.bio, name='bio'),

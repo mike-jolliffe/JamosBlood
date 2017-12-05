@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+<div>
+    <div id="bannerTop">
+        {% for show in all_shows %}
+            <li><a href="{% url  %}"></a></li>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

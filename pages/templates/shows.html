@@ -2,9 +2,13 @@
 {% load static %}
 
 {% block header %}
-<div>
-    <div id="bannerTop">
-        <h1>Jamos Blood</h1>
+<body>
+    <div>
+        <div id="bannerTop">
+            {% for show in object_list %}
+                <li><a href="{% url 'show_detail' show.id %}">{{ show.date }} @ {{ show.venue }}</a></li>
+            {% endfor %}
+        </div>
     </div>
-</div>
+</body>
 {% endblock %}

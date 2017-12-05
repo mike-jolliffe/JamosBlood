@@ -21,8 +21,15 @@ def get_email(request):
 
         return HttpResponse('')
 
-def shows(request):
-    return render(request, "shows.html")
+class ShowsList(generic.ListView):
+    template_name = 'shows.html'
+
+    def get_queryset(self):
+        return Show.objects.all()
+
+class ShowDetails(generic.DetailView):
+    model = Show
+    template_name = 'show_details.html'
 
 def music(request):
     return render(request, "music.html")
