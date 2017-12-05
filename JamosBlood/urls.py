@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'contact/', page_views.contact, name='contact'),
     url(r'bio/', page_views.bio, name='bio'),
     url(r'photos/', page_views.photos, name='photos'),
+    url(r'email/', page_views.get_email, name='email')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
